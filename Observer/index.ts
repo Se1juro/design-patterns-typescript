@@ -10,5 +10,8 @@ const sub3 = new UserSubscribe(channel);
 channel.subscribe(sub1);
 channel.subscribe(sub2);
 channel.subscribe(sub3);
+console.log("🚀 ~ file: index.ts:13 ~ channel:", channel.getSubscribers());
+channel.unsubscribe(sub1);
+console.log("🚀 ~ file: index.ts:15 ~ channel:", channel.getSubscribers());
 
 channel.uploadNewVideo("Testing");

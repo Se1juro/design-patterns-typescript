@@ -9,7 +9,8 @@ export class YoutubeChannel implements Publisher {
     this.subscribers.push(subscriber);
   }
   unsubscribe(subscriber: Subscriber) {
-    // Delete Subscriber
+    const indexToRemove: number = this.subscribers.indexOf(subscriber);
+    this.subscribers.splice(indexToRemove, 1);
   }
 
   uploadNewVideo(titleVideo: string) {
@@ -20,6 +21,10 @@ export class YoutubeChannel implements Publisher {
 
   getLastVideo() {
     return this.lastVideoTitle;
+  }
+
+  getSubscribers() {
+    return this.subscribers;
   }
 
   notify() {
