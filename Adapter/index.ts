@@ -1,5 +1,5 @@
 import { AdapterXMLToJson } from "./adapter";
-import { ReadXML } from "./readXML.implementation";
+import { ReadXML } from "./implementations/readXML.implementation";
 
 const readXML = new ReadXML();
 

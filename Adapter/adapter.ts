@@ -1,5 +1,5 @@
-import { ReadJson } from "./readJSON.implementation";
-import { ReadXML } from "./readXML.implementation";
+import { ReadJson } from "./implementations/readJSON.implementation";
+import { ReadXML } from "./implementations/readXML.implementation";
 
 export class AdapterXMLToJson implements ReadJson {
   constructor(private readXMLimp: ReadXML) {}

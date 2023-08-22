@@ -1,4 +1,4 @@
-import { ReadXMLInterface } from "./readXML.interface";
+import { ReadXMLInterface } from "../interfaces/readXML.interface";
 
 export class ReadXML implements ReadXMLInterface {
   readXML(): void {

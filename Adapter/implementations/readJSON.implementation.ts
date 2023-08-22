@@ -1,4 +1,4 @@
-import { ReadJsonInterface } from "./readJSON.interface";
+import { ReadJsonInterface } from "../interfaces/readJSON.interface";
 
 export class ReadJson implements ReadJsonInterface {
   readJson(): void {
